@@ -1,0 +1,128 @@
+{
+
+  "name": "TXT UPLOADER",
+
+  "repository": "https://github.com/Malang00/jaatji",
+
+  "description": "A telegram Bot for downloading videos from various websites. Created by JAAT",
+
+  "addons": [],
+
+  "env": {
+
+    "API_ID": {
+
+      "description": "TG API_ID",
+
+      "value":"8006372",
+
+      "required": true
+
+    },
+
+    "API_HASH": {
+
+      "description": "TG API HASH",
+
+      "value":"f878ef2fd1044167b7d8ab23320e1eda",
+
+      "required": true
+
+    },
+
+    "BOT_TOKEN": {
+
+      "description": "Get your bot token by talking to @Botfather",
+
+      "value": "6035104370:AAFjmi4e7LDGzFGnMRfEL3sn87iM882aAHI",
+      
+      "required": true
+
+    },
+
+    "APP_NAME": {
+
+      "description": "Heroku app name",
+
+      "value": "Malang Jaat",
+
+      "required": false
+
+    },
+
+    "API_KEY": {
+
+      "description": "Heroku api key",
+
+      "required": false
+
+    },
+
+    "ADMINS": {
+
+      "description": "who will use this bot",
+
+      "value":"1924424042",
+
+      "required": true
+
+    },
+
+    "FR_TOKEN": {
+
+      "description": "FR_TOKEN",
+
+      "value":"f4f0e3047723385244d3aae0068d60ec09f79345",
+
+      "required": true
+
+    },
+
+    "LOG": {
+      
+      "value":"-1001893757670",
+
+      "description": "Group Ids seperated by space",
+
+      "required": false
+
+    }
+
+  },
+
+  "formation": {
+
+    "worker": {
+
+    "quantity": 1,
+
+    "size": "eco"
+
+    }
+
+  },
+
+  "buildpacks": [
+
+    {
+
+      "url": "heroku/python"
+
+    },
+
+    {
+
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+
+    },
+
+ 
+    {
+
+      "url": "https://github.com/amivin/aria2-heroku.git"
+
+    }
+
+  ]
+
+}
