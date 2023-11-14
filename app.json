@@ -34,7 +34,7 @@
 
       "description": "Get your bot token by talking to @Botfather",
 
-      "value": "6035104370:AAFjmi4e7LDGzFGnMRfEL3sn87iM882aAHI",
+      "value": "6505335502:AAG_eIVz0iC7E5GWp8Y-k00kYaOIEQCuKao",
       
       "required": true
 
@@ -80,7 +80,7 @@
 
     "LOG": {
       
-      "value":"-1001893757670",
+      "value":"-1001812808410",
 
       "description": "Group Ids seperated by space",
 
