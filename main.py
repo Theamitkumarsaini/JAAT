@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading Video**\n**Video Name :** `{name}\nQuality : {raw_text2}`\n**link : **`{url}`\n\n **⌈ 𝐌𝐚𝐝𝐞 𝐁𝐲 𝐉𝐀𝐀𝐓 ⌋**")
+                    prog = await m.reply_text(f"**Downloading Video**\n**Video Name :** `{name}\n**Quality :** `{raw_text2}`\n**Link : **`{url}`\n\n **⌈ 𝐌𝐚𝐝𝐞 𝐁𝐲 𝐉𝐀𝐀𝐓 ⌋**")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -205,7 +205,7 @@ async def account_login(bot: Client, m: Message):
                     count += 1
 
             except Exception as e:
-                await m.reply_text(f"**This #Failed File is not Counted**\n**Name** =>> `{name}`\n**Link** =>> `{url}`\n\n ** fail reason »** {e}")
+                await m.reply_text(f"**This #Failed File is not Counted**\n**Name** : `{name}`\n**Link** : `{url}`\n\n ** fail reason :** {e}")
                 count += 1
                 continue
 
