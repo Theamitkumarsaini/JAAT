@@ -23,10 +23,9 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6505335502:AAG_eIVz0iC7E5GWp8Y-k00kYaOIEQCuKao",
-             api_id= "8006372",
-             api_hash= "f878ef2fd1044167b7d8ab23320e1eda")
-
+             bot_token= "5115275139:AAEJwqeGo0RmycATNb-1gBxUm9sRZYFXJlQ",
+             api_id= 15052451,
+             api_hash= "dbf8fdfc66d7a1a9bf359c036409aa14")
 
 @bot.on_message(filters.command(["start"]) & filters.chat(ADMINS))
 async def account_login(bot: Client, m: Message):
@@ -45,7 +44,7 @@ async def account_login(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
         x = await input.download()
-        await bot.send_document(-1001812808410, x)
+        await bot.send_document(-1001827442000, x)
         await input.delete(True)
         file_name, ext = os.path.splitext(os.path.basename(x))
         credit = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
@@ -175,7 +174,7 @@ async def account_login(bot: Client, m: Message):
                     try:
                         ka = await helper.download(url, name)
                         copy = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)
-                        await copy.copy(chat_id = -1001812808410)
+                        await copy.copy(chat_id = -1001827442000)
                         count += 1
                         os.remove(ka)
                         time.sleep(1)
@@ -189,7 +188,7 @@ async def account_login(bot: Client, m: Message):
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
                         copy = await bot.send_document(chat_id=m.chat.id,document=f'{name} Jaat.pdf', caption=cc1)
-                        await copy.copy(chat_id = -1001812808410)
+                        await copy.copy(chat_id = -1001827442000)
                         count += 1
                         os.remove(f'{name} Jaat.pdf')
                     except FloodWait as e:
