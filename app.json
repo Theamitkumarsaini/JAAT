@@ -4,7 +4,7 @@
 
   "repository": "https://github.com/Malang00/youloveme",
 
-  "description": "A telegram Bot for downloading videos from various websites. Created by JAAT",
+  "description": "A telegram Bot for downloading videos from various websites. Created by PROFESSOR ",
 
   "addons": [],
 
@@ -44,7 +44,7 @@
 
       "description": "Heroku app name",
 
-      "value": "Malang Jaat",
+      "value": "PROFESSOR ",
 
       "required": false
 
